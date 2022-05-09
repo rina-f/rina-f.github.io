@@ -19,7 +19,7 @@ img {
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 ;
   font-family: 'Baskerville URW';
 }
 
@@ -27,7 +27,7 @@ img {
   font-size: 45px;
   color: #383e45;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px auto 20px;
 }
 
 /* HEADER */
@@ -181,6 +181,7 @@ input[type="submit"] {
 
 @media (max-width: 600px) {
 
+  /* HEADER */
   #header {
     flex-direction: column;
     align-items: center;
@@ -195,34 +196,29 @@ input[type="submit"] {
     padding: 0;
     margin-top: 20px;
   }
+  /* MEIN */
+  
+  #mainvisual {
+    text-align: center;
+    margin-top: 40%;
+  }
   
   .section-title {
     font-size: 30px;
     padding: 20px;
   }
 
-  #mainvisual {
-    text-align: center;
-    margin-top: 40%;
-    }
+  #mainvisual .title {
+    font-size: 22px;
+    margin: 0 auto;
+  }
+  /* ABOUT */
+   #about .my-name {
+    font-size: 18px;
+  }
 
-    #mainvisual .title {
-      font-size: 22px;
-      margin: 0 auto;
-    }
-
-    #about .my-name {
-      font-size: 18px;
-    }
-
-    #about p {
-      font-size: 15px;
-    }
-
-    
-  
-
-
-
+   #about p {
+    font-size: 15px;
+  }
 
 }
