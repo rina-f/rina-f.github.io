@@ -181,6 +181,11 @@ input[type="submit"] {
 
 @media (max-width: 600px) {
 
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
   /* HEADER */
   #header {
     flex-direction: column;
