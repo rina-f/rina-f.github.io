@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: メイリオ;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 4%;
+  font-family: 'Baskerville URW';
+}
+
+.section-title {
+  font-size: 45px;
+  color: #383e45;
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* HEADER */
+
+#header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+}
+
+
+#header .logo {
+  width: 208px;
+}
+
+
+#header ul {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+}
+
+#header .main-nav ul a {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  color: #383e45;
+}
+
+/* MAIN */
+
+#mainvisual {
+text-align: center;
+margin-top: 60px;
+}
+
+#mainvisual .title {
+  display: block;
+  position: relative;
+  top: -200px;
+  margin-right: 200px;
+  font-size: 30px;
+  color: #383e45;
+}
+
+#about .my-name {
+  margin: 60px auto 20px;
+  color: #383e45;
+}
+
+
+#about .my-name p {
+  display: inline-block;
+  text-align: left;
+  color: #383e45;
+}
+
+/* WORKS */
+
+#works .logo-binna {
+  display: flex;
+  justify-content: center;
+  margin: 60px auto 20px;
+  color: #383e45;
+}
+
+#works .logo-binna p {
+  display: block;
+  text-align: center;
+  margin: -40px auto 30px;
+}
+
+
+#works .logo-binna-kb img {
+  width: 350px;
+}
+
+#works .logo-binna-ms img {
+  width: 350px;
+}
+
+
+
+/* CONTACT */
+
+#contact form {
+  display: block;
+  text-align: center;
+  margin: 60px auto 50px;
+}
+
+#contact form div {
+  margin-bottom: 20px;
+}
+
+#contact label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  align-items: left;
+  color: #383e45;
+}
+
+#contact .button {
+  font-size: 16px;
+  background: #383e45;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 40px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px #383e45 solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  background: #fff;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  max-width: 300px;
+}
+
+textarea {
+  width: 100%;
+  max-width: 300px;
+  height: 6rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* FOOTER */
+
+#footer p {
+  font-size: 15px;
+  text-align: center;
+  color: #707070;
+  padding: 10px;
+}
+
+/* SF */
+
+@media (max-width: 600px) {
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  #header .main-nav {
+    font-size: 16px;
+  }
+
+  #header .main-nav ul {
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  #mainvisual {
+    text-align: center;
+    margin-top: 40%;
+    }
+
+    #mainvisual .title {
+      font-size: 22px;
+      margin: 0 auto;
+    }
+
+    #about .my-name {
+      font-size: 18px;
+    }
+
+    #about p {
+      font-size: 15px;
+    }
+
+    
+  
+
+
+
+
+}
