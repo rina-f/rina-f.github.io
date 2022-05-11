@@ -5,8 +5,12 @@ html {
 }
 
 body {
-  margin: auto;
+  margin: 0;
   font-family: メイリオ;
+}
+
+h1 {
+  margin: 0;
 }
 
 a {
@@ -15,44 +19,43 @@ a {
 
 img {
   max-width: 100%;
+  text-align: center;
 }
 
 .wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 ;
   font-family: 'Baskerville URW';
+  width: calc(100% - 100px);
+  margin: 10px auto 0;
+  color: #383e45;
 }
 
 .section-title {
-  font-size: 45px;
-  color: #383e45;
+  font-size: 22px;
   text-align: center;
-  margin: 20px auto 20px;
+  padding: 50px;
+ 
 }
 
 /* HEADER */
 
 #header {
   display: flex;
-  height: 100px;
+  padding: 16px 0;
   justify-content: space-between;
 }
 
-
 #header .logo {
-  width: 208px;
+  width: 110px;
 }
-
 
 #header ul {
   display: flex;
+  text-align: center;
   list-style: none;
-  margin-top: 50px;
+ margin-top: 30px;
 }
 
 #header .main-nav ul a {
-  text-align: center;
   padding: 30px;
   font-size: 20px;
   color: #383e45;
@@ -61,44 +64,59 @@ img {
 /* MAIN */
 
 #mainvisual {
-text-align: center;
-margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px;
 }
+
 
 #mainvisual .title {
-  display: block;
+  display: inline-block;
   position: relative;
   top: -200px;
-  margin-right: 200px;
+  right: 150px; 
   font-size: 30px;
-  color: #383e45;
 }
 
-#about .my-name {
-  margin: 60px auto 20px;
-  color: #383e45;
+/* about */
+
+
+
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-#about .my-name p {
-  display: inline-block;
+#about .text {
+  line-height: 1.6;
   text-align: left;
-  color: #383e45;
 }
+
+#about .text .content-title {
+  font-size: 18px;
+  padding: 20px 0 20px 0;
+}
+
 
 /* WORKS */
+
+#works .portforio {
+  text-align: center;
+  justify-content: center;
+}
 
 #works .logo-binna {
   display: flex;
   justify-content: center;
-  margin: 60px auto 20px;
-  color: #383e45;
+  
 }
 
 #works .logo-binna p {
   display: block;
   text-align: center;
-  margin: -40px auto 30px;
+  margin-top:-40px;
 }
 
 
@@ -117,7 +135,6 @@ margin-top: 60px;
 #contact form {
   display: block;
   text-align: center;
-  margin: 60px auto 50px;
 }
 
 #contact form div {
@@ -129,7 +146,6 @@ margin-top: 60px;
   margin-bottom: 5px;
   display: block;
   align-items: left;
-  color: #383e45;
 }
 
 #contact .button {
@@ -172,7 +188,7 @@ input[type="submit"] {
 /* FOOTER */
 
 #footer p {
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   color: #707070;
   padding: 10px;
@@ -182,44 +198,64 @@ input[type="submit"] {
 
 @media (max-width: 600px) {
 
+  .br-sp{display: none;}
 
-  /* HEADER */
-  #header {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #header .main-nav {
+
+  /* HTADER */
+
+ #header {
+   flex-direction: column;
+ }
+
+ #header .logo {
+   margin: 0 auto;
+ }
+
+
+ #header .main-nav ul {
+   padding: 0;
+   margin: 20px auto;
+   justify-content: space-between;
+ }
+
+ #header .main-nav ul li a {
     font-size: 16px;
-  }
+    padding: 0;
+ }
 
-  #header .main-nav ul {
-    
-    margin-top: 20px;
-  }
-  /* MEIN */
-  
-  #mainvisual {
-    text-align: center;
-    margin-top: 40%;
-  }
-  
-  .section-title {
-    font-size: 30px;
-    padding: 20px;
-  }
+/* MEIN */
 
-  #mainvisual .title {
-    font-size: 22px;
-    margin: 0 auto;
-  }
-  /* ABOUT */
-   #about .my-name {
-    font-size: 18px;
-  }
+ #mainvisual .title {
+   top: -200px;
+   right: 0;
+   font-size: 20px;
+ }
 
-   #about p {
-    font-size: 15px;
-  }
+ /* ABOUT */
+
+ #about .text {
+   font-size: 15px;
+   text-align: left;
+ }
+
+ #about .text p {
+   font-size:  14px;
+ } 
+
+ /* WORKS */
+
+ #works .logo-binna p {
+  display: block;
+  text-align: center;
+  margin-top:-20px;
+}
+
+/* CONTACT */
+
+#contact .section-wrapper {
+  margin: 0 auto;
+  align-items: center;
+}
+
 
 }

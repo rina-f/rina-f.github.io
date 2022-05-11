@@ -16,58 +16,68 @@
     </h1>
     <nav class="main-nav">
       <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#works">works</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
   <div id="mainvisual" class="wrapper">
-  <img src="images/IMG-5769-Original.png" alt="">
+  <img 
+    src="images/IMG-5769-Original.png" 
+    alt=""
+    width="320"
+    height="330">
     <p class="title">Welcome to my Portfolio</p>
   </div>
 
   <section id="about" class="wrapper">
-    <h2 class="section-title">about</h2>
-    <h3 class="my-name">RINA FUJISHIMA</h3>
-      <p>高校卒業後、接客・事務・販売職に従事し、接客能力と事務処理能力のスキルアップを図る。<br>
-        この経験を活かして、かつさらに専門的な仕事に挑戦したいと考え、もともと興味のあったWebデザイナーを志す。
-        書籍や動画でHTML5/CSS3/Adobe XDの基礎を学ぶ。<br>
-        同時期にエステサロンオープン予定の友人より、ロゴと名刺の制作を依頼されたことをきっかけに、Illustrator/Photoshopを学ぶ。
-      </p>
+    <h2 class="section-title">ABOUT</h2>
+    <div class="content">
+      <div class="text">
+        <h3 class="content-title">RINA FUJISHIMA</h3>
+        <p>高校卒業後、接客・事務・販売職に従事し、接客能力と事務処理能力のスキルアップを図る。<br class="br-sp">
+          この経験を活かして、かつさらに専門的な仕事に挑戦したいと考え、もともと興味のあった<br class="br-sp">Webデザイナーを志す。<br >
+          書籍や動画でHTML5/CSS3/Adobe XDの基礎を学ぶ。<br class="br-sp">
+          同時期にエステサロンオープン予定の友人より、ロゴと名刺の制作を依頼されたことを<br class="br-sp">きっかけに、Illustrator/Photoshopを学ぶ。
+        </p>
+      </div>
+    </div>
   </section>
 
   <section id="works" class="wrapper">
-    <h2 class="section-title">works</h2>
-    <div class="logo-binna">
-      <div class="logo-binna-kb">
-        <img src="images/Binna-kb.png" alt="">
-        <p>ロゴデザイン</p>
-      </div>
-      <div class="logo-binna-ms">
-        <img src="images/Binna-ms.png" alt="">
-        <p>名刺デザイン</p>
-      </div>
+    <h2 class="section-title">WORKS</h2>
+    <div class="portforio">
+      <div class="logo-binna">
+        <div class="logo-binna-kb">
+          <img src="images/Binna-kb.png" alt="">
+          <p>ロゴデザイン</p>
+        </div>
+        <div class="logo-binna-ms">
+          <img src="images/Binna-ms.png" alt="">
+          <p>名刺デザイン</p>
+        </div>
+    </div>
   </section>
 
   <section id="contact" class="wrapper">
-    <h2 class="section-title">contact</h2>
+    <h2 class="section-title">CONTACT</h2>
     <form action="#">
-      <div>
+      <div class="section-wrapper">
         <label for="mame">NAME</label>
         <input type="text" id="name" name="your-name">
+        <div>
+          <label for="email">E-MEIL</label>
+          <input type="email" id="email" name="your-email">
+        </div>
+        <div>
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="your-message" cols="30" rows="10"></textarea>
+        </div>
+        
       </div>
-      <div>
-        <label for="email">E-MEIL</label>
-        <input type="email" id="email" name="your-email">
-      </div>
-      <div>
-        <label for="message">MESSAGE</label>
-        <textarea id="message" name="your-message" cols="30" rows="10"></textarea>
-      </div>
-
       <input type="submit" class="button" value="送信">
     </form>
   </section>
