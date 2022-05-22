@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* COMMON */
+
 html {
   font-size: 100%;
 }
@@ -33,32 +35,40 @@ img {
   font-size: 22px;
   text-align: center;
   padding: 50px;
- 
 }
 
 /* HEADER */
 
 #header {
   display: flex;
-  padding: 16px 0;
-  justify-content: space-between;
+}
+
+#header .main-nav {
+  margin-left: auto;
+}
+
+#header .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 #header .logo {
   width: 110px;
 }
 
-#header ul {
-  display: flex;
-  text-align: center;
-  list-style: none;
- margin-top: 30px;
-}
-
-#header .main-nav ul a {
-  padding: 30px;
+#header .main-nav a {
+  width: 105px;
   font-size: 20px;
   color: #383e45;
+  text-align: center;
+  display: block;
+  line-height: 85.14px;
+}
+
+#header .main-nav a:hover {
+  opacity: .8;
 }
 
 /* MAIN */
@@ -70,18 +80,15 @@ img {
   height: 320px;
 }
 
-
 #mainvisual .title {
   display: inline-block;
   position: relative;
-  top: -200px;
+  top: -180px;
   right: 150px; 
   font-size: 30px;
 }
 
 /* about */
-
-
 
 #about .content {
   display: flex;
@@ -110,7 +117,6 @@ img {
 #works .logo-binna {
   display: flex;
   justify-content: center;
-  
 }
 
 #works .logo-binna p {
@@ -127,8 +133,6 @@ img {
 #works .logo-binna-ms img {
   width: 350px;
 }
-
-
 
 /* CONTACT */
 
@@ -198,40 +202,34 @@ input[type="submit"] {
 
 @media (max-width: 600px) {
 
-  .br-sp{display: none;}
-
-
-  /* HTADER */
+/* HTADER */
 
  #header {
    flex-direction: column;
+   margin: 0 auto;
+ }
+
+ #header .wrapper {
+  margin: 0;
  }
 
  #header .logo {
    margin: 0 auto;
  }
 
-
- #header .main-nav ul {
-   padding: 0;
-   margin: 20px auto;
-   justify-content: space-between;
- }
-
- #header .main-nav ul li a {
-    font-size: 16px;
-    padding: 0;
+ #header .main-nav a {
+  font-size: 16px;
  }
 
 /* MEIN */
 
  #mainvisual .title {
-   top: -200px;
+   top: -180px;
    right: 0;
    font-size: 20px;
  }
 
- /* ABOUT */
+/* ABOUT */
 
  #about .text {
    font-size: 15px;
@@ -242,7 +240,7 @@ input[type="submit"] {
    font-size:  14px;
  } 
 
- /* WORKS */
+/* WORKS */
 
  #works .logo-binna p {
   display: block;
@@ -256,6 +254,5 @@ input[type="submit"] {
   margin: 0 auto;
   align-items: center;
 }
-
 
 }
